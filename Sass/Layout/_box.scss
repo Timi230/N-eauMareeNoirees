@@ -1,0 +1,69 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3%;
+    position: fixed;
+    top: 36%;
+    left: 6%;
+}
+.box{
+    width: 30rem;
+    height: 30rem;
+    
+    background-color: white;
+
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0px #c3dae6;
+
+    &--title{
+        height: 25%;
+        padding-top: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    &--subBox{
+        width: 75%;
+        height: 25%;
+
+        border-radius: 5px;
+
+        padding-left: 2rem;
+        padding-top: 1rem;
+        margin-top:3rem;
+
+
+        &__Plein{
+            background-color: $primaryColor;
+        }
+
+        &__Vide{
+            
+            border-style: solid;
+            border-color: $primaryColor;
+            border-width: 1px;
+
+            
+            margin-left: 25%;
+        }
+    }
+
+    &--presentation{
+        width: 40rem;
+        background: none;
+        box-shadow: none;
+        
+        &__title{
+            background-color: none;
+            height:auto;
+            margin-top:40%;
+        }
+        &__paragraphe{
+            background-color: none;
+            margin: 2rem;
+            margin-left: 4rem;
+
+        }
+    }
+}
