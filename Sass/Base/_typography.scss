@@ -19,20 +19,24 @@ h1, .title{
     font-style: bold;
 
     @include mobile-only{
-        font-size: $fontSizeTitle - 0.2rem,
+        font-size: $fontSizeTitle - 0.3,
     }
     &__sub{
         font-size: $fontSizeTitle - 0.2;
+        @include mobile-only{
+            font-size: $fontSizeTitle - 0.4;
+        }
     }
 }
 
 
-.regular{
+p, .regular{
     font-family: 'Poppins-regular';
-    font-size: 0.9rem;
+    font-size: $fontSize;
+
+    @include mobile-only{
+        font-size: $fontSize - 0.2;
+    }
+    
 }
 
-p{
-    font-family: 'Poppins-regular';
-    font-size: 0.9rem;
-}

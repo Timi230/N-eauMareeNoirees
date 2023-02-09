@@ -5,6 +5,7 @@
 
     @include mobile-only{
         margin-top: 0.3rem;
+        
     }
     
     &__link {
@@ -13,7 +14,8 @@
         font-style: none;
 
         @include mobile-only{
-            padding-right:0.7rem;
+            padding-right:0.2rem;
+            display:none;
         }
 
         & a{
@@ -31,6 +33,15 @@
         & a:hover{
             color: $secondaryColor;
         }
+
+        &--mobile{
+            @include mobile-only{
+                display: inline;
+                margin-right: 10%;
+            }
+        }
     }
+
+    
     
 }

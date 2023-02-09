@@ -39,7 +39,7 @@
             font-size: $fontSizeTitle + 1;
 
             @include mobile-only{
-                font-size: $fontSizeTitle;
+                font-size: $fontSizeTitle - 0.3;
                 margin-top: 10%;
 
             }

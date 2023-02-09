@@ -39,7 +39,7 @@ h1, .title {
 
 @media screen and (max-width: 599px) {
   h1, .title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -47,14 +47,21 @@ h1__sub, .title__sub {
   font-size: 1.3rem;
 }
 
-.regular {
-  font-family: 'Poppins-regular';
-  font-size: 0.9rem;
+@media screen and (max-width: 599px) {
+  h1__sub, .title__sub {
+    font-size: 1.1rem;
+  }
 }
 
-p {
+p, .regular {
   font-family: 'Poppins-regular';
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 599px) {
+  p, .regular {
+    font-size: 0.8rem;
+  }
 }
 
 .fleche {
@@ -118,7 +125,7 @@ p {
 
 @media screen and (max-width: 599px) {
   .header--section__slogan {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 10%;
   }
 }
@@ -145,7 +152,8 @@ p {
 
 @media screen and (max-width: 599px) {
   .nav__link {
-    padding-right: 0.7rem;
+    padding-right: 0.2rem;
+    display: none;
   }
 }
 
@@ -164,6 +172,13 @@ p {
 
 .nav__link a:hover {
   color: #4D9ECD;
+}
+
+@media screen and (max-width: 599px) {
+  .nav__link--mobile {
+    display: inline;
+    margin-right: 10%;
+  }
 }
 
 body {
@@ -195,7 +210,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    top: 20%;
+    top: 15%;
   }
 }
 
@@ -210,6 +225,7 @@ body {
 
 @media screen and (max-width: 599px) {
   .box {
+    width: 80%;
     margin: 1rem;
   }
 }
@@ -250,7 +266,7 @@ body {
 
 @media screen and (max-width: 599px) {
   .box--presentation {
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -258,6 +274,12 @@ body {
   background-color: none;
   height: auto;
   margin-top: 30%;
+}
+
+@media screen and (max-width: 599px) {
+  .box--presentation__title {
+    margin-top: 1%;
+  }
 }
 
 .box--presentation__paragraphe {
