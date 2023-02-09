@@ -33,17 +33,23 @@ body {
 h1, .title {
   font-family: 'Poppins-700';
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: bold;
 }
 
+@media screen and (max-width: 599px) {
+  h1, .title {
+    font-size: 1.3rem;
+  }
+}
+
 h1__sub, .title__sub {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .regular {
   font-family: 'Poppins-regular';
-  font-size: 1.5rem;
+  font-size: 0.9rem;
 }
 
 p {
@@ -76,6 +82,13 @@ p {
   background-position: center 25%;
 }
 
+@media screen and (max-width: 599px) {
+  .header {
+    position: absolute;
+    height: 40%;
+  }
+}
+
 .header--section {
   width: 100%;
   height: 50%;
@@ -88,25 +101,52 @@ p {
           align-items: center;
 }
 
+@media screen and (max-width: 599px) {
+  .header--section {
+    height: 75%;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+}
+
 .header--section__slogan {
   margin: auto;
   margin-bottom: 20%;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 599px) {
+  .header--section__slogan {
+    font-size: 1.5rem;
+    margin-top: 10%;
+  }
 }
 
 .nav {
-  margin-left: 30%;
+  margin-top: .5rem;
   -webkit-box-flex: 2;
       -ms-flex: 2 1 auto;
           flex: 2 1 auto;
   text-align: right;
 }
 
+@media screen and (max-width: 599px) {
+  .nav {
+    margin-top: 0.3rem;
+  }
+}
+
 .nav__link {
   padding-right: 4rem;
   display: inline;
   font-style: none;
-  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 599px) {
+  .nav__link {
+    padding-right: 0.7rem;
+  }
 }
 
 .nav__link a {
@@ -148,6 +188,17 @@ body {
   right: 6%;
 }
 
+@media screen and (max-width: 599px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    top: 20%;
+  }
+}
+
 .box {
   width: 30rem;
   height: 30rem;
@@ -155,6 +206,12 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: 4px 4px 4px 0px #c3dae6;
           box-shadow: 4px 4px 4px 0px #c3dae6;
+}
+
+@media screen and (max-width: 599px) {
+  .box {
+    margin: 1rem;
+  }
 }
 
 .box--title {
@@ -191,10 +248,16 @@ body {
           box-shadow: none;
 }
 
+@media screen and (max-width: 599px) {
+  .box--presentation {
+    width: 75%;
+  }
+}
+
 .box--presentation__title {
   background-color: none;
   height: auto;
-  margin-top: 40%;
+  margin-top: 30%;
 }
 
 .box--presentation__paragraphe {

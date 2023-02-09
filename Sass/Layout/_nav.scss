@@ -1,13 +1,20 @@
 .nav{
-    margin-left: 30%;
+    margin-top:.5rem;
     flex: 2 1 auto;
     text-align: right;
+
+    @include mobile-only{
+        margin-top: 0.3rem;
+    }
     
     &__link {
         padding-right: 4rem;
         display: inline;
         font-style: none;
-        font-size: $fontSize;
+
+        @include mobile-only{
+            padding-right:0.7rem;
+        }
 
         & a{
             text-decoration: none;

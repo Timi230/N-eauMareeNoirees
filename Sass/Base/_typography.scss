@@ -15,17 +15,21 @@
 h1, .title{
     font-family: 'Poppins-700';
     font-weight: 700;
-    font-size: 2rem;
+    font-size: $fontSizeTitle;
     font-style: bold;
+
+    @include mobile-only{
+        font-size: $fontSizeTitle - 0.2rem,
+    }
     &__sub{
-        font-size: 1.5rem;
+        font-size: $fontSizeTitle - 0.2;
     }
 }
 
 
 .regular{
     font-family: 'Poppins-regular';
-    font-size: $fontSize;
+    font-size: 0.9rem;
 }
 
 p{

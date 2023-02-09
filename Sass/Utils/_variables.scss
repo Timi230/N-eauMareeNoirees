@@ -1,5 +1,10 @@
 
-$fontSize: 1.5rem;
+$fontSize: 1rem;
+$fontSizeTitle: 1.5rem;
 
 $primaryColor: #CBDDE7;
 $secondaryColor: #4D9ECD;
+
+$breakpoint:(
+    mobile: 599px
+)

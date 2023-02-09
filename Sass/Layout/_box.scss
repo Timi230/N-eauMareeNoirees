@@ -7,6 +7,12 @@
     top: 36%;
     left: 6%;
     right: 6%;
+
+    @include mobile-only{
+        flex-direction: column;
+        position: relative;
+        top: 20%;
+    }
 }
 .box{
     width: 30rem;
@@ -16,6 +22,10 @@
 
     border-radius: 10px;
     box-shadow: 4px 4px 4px 0px #c3dae6;
+
+    @include mobile-only{
+        margin: 1rem;
+    }
 
     &--title{
         height: 25%;
@@ -54,16 +64,21 @@
         width: 40rem;
         background: none;
         box-shadow: none;
+
+        @include mobile-only{
+            width: 75%;
+        }
         
         &__title{
             background-color: none;
             height:auto;
-            margin-top:40%;
+            margin-top:30%;
         }
         &__paragraphe{
             background-color: none;
             margin: 2rem;
             margin-left: 4rem;
+            
 
         }
     }
