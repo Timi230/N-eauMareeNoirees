@@ -1,0 +1,69 @@
+.container{
+    &__image{
+        top:33%;
+        display: grid;
+        
+        @include mobile-only{
+            top:0;
+        }
+    }
+}
+
+.box{
+    &__image{
+        grid-row: 1;
+        grid-column: 1;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap:8rem;
+
+        @include mobile-only{
+            flex-direction: column;
+            gap:4rem;
+        }
+        
+        &--membre{
+            height: 20rem;
+            width: 20rem;
+            border-radius:50%;
+
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center 50%;
+
+            text-align: center;
+
+
+            &--Titouan{
+                background-image: url("../images/Titouan.jpeg");
+                
+            }
+
+            &--Camille{
+                background-image: url("../images/Camille.jpeg");
+            }
+            
+        }
+        &--titouan{
+            height:20rem;
+            width:20rem;
+            border-radius:50%;
+        }
+
+    }
+}
+
+.text{
+    width:100%;
+
+    grid-column:1;
+    grid-row: 2;
+
+    margin-top:3%;
+
+    @include mobile-only{
+        width:90%;
+    }
+}

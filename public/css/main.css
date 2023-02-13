@@ -93,6 +93,7 @@ p, .regular {
   .header {
     position: absolute;
     height: 40%;
+    width: 100%;
   }
 }
 
@@ -286,5 +287,84 @@ body {
   background-color: none;
   margin: 2rem;
   margin-left: 4rem;
+}
+
+.container__image {
+  top: 33%;
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (max-width: 599px) {
+  .container__image {
+    top: 0;
+  }
+}
+
+.box__image {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8rem;
+}
+
+@media screen and (max-width: 599px) {
+  .box__image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+.box__image--membre {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  text-align: center;
+}
+
+.box__image--membre--Titouan {
+  background-image: url("../images/Titouan.jpeg");
+}
+
+.box__image--membre--Camille {
+  background-image: url("../images/Camille.jpeg");
+}
+
+.box__image--titouan {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+}
+
+.text {
+  width: 100%;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin-top: 3%;
+}
+
+@media screen and (max-width: 599px) {
+  .text {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
