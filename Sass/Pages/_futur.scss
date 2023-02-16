@@ -1,0 +1,26 @@
+.container {
+    &--futur{
+        @include mobile-only{
+            display: flex;
+            top:0;
+            top: 10rem;
+            left: 1rem;
+            right: 2.5rem;
+            position: absolute;
+        }
+    }
+}
+
+.box{
+    &--futur{
+        @include mobile-only{
+            width: 100%;
+        }
+    }
+
+    &--title{
+        &--futur{
+            height: 15%;
+        }
+    }
+}

@@ -2,11 +2,16 @@
     &__image{
         top:33%;
         display: grid;
-        
+
         @include mobile-only{
+            display: flex;
             top:0;
-        }
+            top: 10rem;
+            left: 4rem;
+            position: absolute;
     }
+        }
+        
 }
 
 .box{
@@ -17,7 +22,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap:8rem;
+        gap:6rem;
 
         @include mobile-only{
             flex-direction: column;
@@ -25,8 +30,8 @@
         }
         
         &--membre{
-            height: 20rem;
-            width: 20rem;
+            height: 17rem;
+            width: 17rem;
             border-radius:50%;
 
             background-size: 100%;
@@ -44,12 +49,15 @@
             &--Camille{
                 background-image: url("../images/Camille.jpeg");
             }
+
+            &--Guillaume{
+                background-image: url("../images/Guillaume.jpeg")
+            }
+
+            &--Albane{
+                background-image: url("../images/Albane.jpg")
+            }
             
-        }
-        &--titouan{
-            height:20rem;
-            width:20rem;
-            border-radius:50%;
         }
 
     }
@@ -62,6 +70,8 @@
     grid-row: 2;
 
     margin-top:3%;
+
+    align-items:"justify";
 
     @include mobile-only{
         width:90%;

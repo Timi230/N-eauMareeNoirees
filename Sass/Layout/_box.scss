@@ -8,6 +8,8 @@
     left: 6%;
     right: 6%;
 
+    
+
     @include mobile-only{
         flex-direction: column;
         position: relative;

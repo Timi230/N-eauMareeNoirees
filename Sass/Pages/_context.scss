@@ -1,0 +1,30 @@
+.container{
+    
+    &--context{
+        @include mobile-only{
+            display: flex;
+            top:0;
+            top: 10rem;
+            left: 1.5rem;
+            position: absolute;
+        }
+    }
+}
+
+.box{
+    &--context{
+        width: 75%;
+        height: 35rem;
+
+        padding: 4rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+
+        @include mobile-only{
+            margin-right: 1rem;
+            width: 20rem;
+            padding: 1rem;
+        }
+    }
+
+}
